@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "fastapi",
+  "buildCommand": "npm ci --prefix frontend --no-audit --no-fund && npm run build --prefix frontend",
+  "functions": {"app.py": {"maxDuration": 300}},
+  "regions": ["lhr1"],
+  "crons": [
+    {"path": "/api/cron/news", "schedule": "15 6 * * *"},
+    {"path": "/api/cron/youtube", "schedule": "30 7 * * *"}
+  ]
+}

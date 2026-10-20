@@ -1,0 +1,29 @@
+services:
+  newsroom:
+    build: .
+    ports:
+      - "127.0.0.1:8788:8788"
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4.1-mini}
+      YOUTUBE_API_KEY: ${YOUTUBE_API_KEY:-}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      GEMINI_VIDEO_MODEL: ${GEMINI_VIDEO_MODEL:-gemini-3.5-flash-lite}
+      NEWSROOM_TIMEZONE: ${NEWSROOM_TIMEZONE:-Europe/London}
+      STRIPE_SECRET_KEY: ${STRIPE_SECRET_KEY:-}
+      STRIPE_WEBHOOK_SECRET: ${STRIPE_WEBHOOK_SECRET:-}
+      PUBLIC_APP_URL: ${PUBLIC_APP_URL:-http://127.0.0.1:8788}
+    volumes:
+      - newsroom-data:/app/data
+    restart: unless-stopped
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    tmpfs: [/tmp]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8788/api/auth/session')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+volumes:
+  newsroom-data:

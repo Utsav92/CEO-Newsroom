@@ -1,0 +1,27 @@
+# Server credentials and local configuration
+.env*
+!.env.example
+.vercel/
+
+# Installed dependencies, caches and builds
+node_modules/
+dist/
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Private accounts, runtime data, QA sessions and generated working files
+data/
+output/
+.playwright-cli/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+
+# Local agent tooling
+.agents/
+.impeccable/
+skills-lock.json

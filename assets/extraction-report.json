@@ -1,0 +1,10 @@
+{
+  "original_mode": "RGB",
+  "size": [
+    2117,
+    743
+  ],
+  "alpha_present": false,
+  "method": "background-connected neutral checker mask + inspected crops",
+  "limitations": "Portraits overlap. Hidden shoulders are not reconstructed; small adjacent clothing fragments may remain."
+}

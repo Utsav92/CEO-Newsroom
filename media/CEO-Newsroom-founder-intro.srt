@@ -1,0 +1,51 @@
+1
+00:00:00,650 --> 00:00:03,994
+I built CEO Newsroom for one simple reason:
+
+2
+00:00:04,114 --> 00:00:07,163
+to make tech news easier to understand.
+
+3
+00:00:07,463 --> 00:00:10,177
+Pick an article and ask a question.
+
+4
+00:00:10,297 --> 00:00:13,301
+Our AI presenters explain what happened,
+
+5
+00:00:13,421 --> 00:00:17,379
+how it works, and its possible impact, with sources.
+
+6
+00:00:17,679 --> 00:00:20,373
+When several companies are involved,
+
+7
+00:00:20,493 --> 00:00:23,152
+compare their different perspectives.
+
+8
+00:00:23,452 --> 00:00:26,156
+Explore official company videos,
+
+9
+00:00:26,276 --> 00:00:30,260
+ask follow-up questions, and keep the conversation going.
+
+10
+00:00:30,560 --> 00:00:33,159
+Tap the heart to save an article.
+
+11
+00:00:33,279 --> 00:00:37,053
+Your saved chats make it easy to pick up where you left off.
+
+12
+00:00:37,353 --> 00:00:39,737
+Welcome to CEO Newsroom.
+
+13
+00:00:39,857 --> 00:00:43,561
+Stay curious. Stay in good company.
